@@ -31,6 +31,6 @@ https://jsonplaceholder.typicode.com/
 
 ## Interceptors
 
-- Interceptros são como middlewares.
+- Interceptors são como middlewares.
 
 - Ou seja, podemos interceptar a requisição e a resposta inserindo algum código entre estas duas ações.
