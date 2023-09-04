@@ -17,3 +17,27 @@
 - No curso, será usado o Vite para criar projetos, apesar de existir a opção "create-react-app", porém, há uma pior performance.
 
 - Comando de criação: "npm create vite@latest" e seguir as opções.
+
+## Estrutura base do React
+
+- node_modules: dependências do projeto.
+
+- public: assets e arquivos estáticos.
+
+- src: onde escrevemos o código da aplicação.
+
+- src/index.js ou main.jsx: arquivo de inicialização da aplicação.
+
+- src/App.js ou App.jsx: componente principal inicial (pode ser modificado).
+
+## Extensão recomendada para React
+
+- ES7 React Snippets
+
+- Ela ajuda a criar rapidamente estruturas que utilizamos em todos projetos.
+
+## Preparando o Emmet para o React
+
+- File > Settings > Extensions e procurar Emmet.
+
+- Incluir: javascript - javascriptreact
