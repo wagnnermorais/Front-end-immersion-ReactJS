@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Interceptors -->
+    <script src="./js/interceptors.js"></script>
+    <title>Axios Introduction</title>
+  </head>
+  <body>
+    <main>
+      <h1>Axios Introduction</h1>
+      <!-- <section id="container">
+        <div class="list-box">
+          <ul id="list"></ul>
+        </div>
+      </section> -->
+
+      <!-- Formulário criado para uso de POST REQUEST -->
+      <h2>Envie dados:</h2>
+      <form id="post-form">
+        <div>
+          <input type="text" id="title" placeholder="Digite o título" />
+        </div>
+        <div>
+          <textarea
+            id="body"
+            placeholder="Digite o corpo da requisição"
+          ></textarea>
+        </div>
+        <input type="submit" value="Criar POST" />
+      </form>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
