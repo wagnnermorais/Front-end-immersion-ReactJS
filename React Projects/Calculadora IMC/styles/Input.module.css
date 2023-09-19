@@ -1,0 +1,23 @@
+.label {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.input {
+  margin: 0.5rem 0 2rem;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  font-size: 1rem;
+  border: 1px solid #bfbaba;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.input:hover {
+  background: #efe4e4;
+}
+
+.input::placeholder {
+  font-style: italic;
+}
