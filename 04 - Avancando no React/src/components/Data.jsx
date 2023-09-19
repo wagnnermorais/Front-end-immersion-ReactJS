@@ -5,7 +5,7 @@ const Data = () => {
   return (
     <div>
       <p>Valor: {anotherNumber}</p>
-      <button onClick={() => setAnotherNumber(anotherNumber++)}>
+      <button onClick={() => setAnotherNumber((anotherNumber += 1))}>
         Mudar valor
       </button>
     </div>
