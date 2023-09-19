@@ -3,7 +3,6 @@ import Button from "./Button";
 import Input from "./Input";
 import style from "../styles/Form.module.css";
 
-// eslint-disable-next-line react/prop-types
 const Form = ({ calculate }) => {
   const [height, setHeight] = useState("");
   const [weight, setWeight] = useState("");
@@ -30,21 +29,23 @@ const Form = ({ calculate }) => {
 
   return (
     <div className={style.container}>
-      <h1 className={style.title}>Calculadora de IMC</h1>
+      <h1 className={style.title}>BMI Calculator</h1>
       <form>
         <Input
           name={"height"}
           title={"Height"}
-          placeholder={"1.75"}
+          placeholder={"1.75m"}
           state={handleValidateHeight}
           value={height}
+          mask={"9.99"}
         />
         <Input
           name={"weight"}
           title={"Weight"}
-          placeholder={"60.5"}
+          placeholder={"60.5kg"}
           state={handleValidateWeight}
           value={weight}
+          mask={"99.9"}
         />
         <div className={style.buttonBox}>
           <Button
