@@ -9,20 +9,49 @@ const Home = () => {
 
     if (!height || !weight) return;
 
-    const heightValue = +height.replace(",", ".");
-    const weightValue = +weight.replace(",", ".");
+    const imcResult = (weight / 10 / ((height / 100) * (height / 100))).toFixed(
+      1
+    );
 
-    const imc = weightValue / (heightValue * heightValue).toFixed(1);
+    setImc(imcResult);
 
-    setImc(imc);
-    console.log(imc);
+    data.forEach((item) => {
+      if (imcResult >= item.min && imcResult <= item.max) {
+        setInfo(item.info);
+        setInfoClass(item.infoClass);
+      }
+    });
+
+    if (!info) return;
+  };
+
+  const reset = (event) => {
+    event.preventDefault();
+
+    setImc("");
+    setInfo("");
+    setInfoClass("");
   };
 
   const [imc, setImc] = useState("");
   const [info, setInfo] = useState("");
   const [infoClass, setInfoClass] = useState("");
 
-  return <div>{!imc ? <Form calculate={calculate} /> : <Table />}</div>;
+  return (
+    <div>
+      {!imc ? (
+        <Form calculate={calculate} />
+      ) : (
+        <Table
+          data={data}
+          imc={imc}
+          info={info}
+          infoClass={infoClass}
+          reset={reset}
+        />
+      )}
+    </div>
+  );
 };
 
 export default Home;
