@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "name": "capa de chuva",
+      "price": "50.50",
+      "id": 5
+    },
+    {
+      "name": "teclado",
+      "price": "110",
+      "id": 6
+    },
+    {
+      "name": "cadeira",
+      "price": "200",
+      "id": 7
+    },
+    {
+      "name": "teste",
+      "price": "20",
+      "id": 8
+    },
+    {
+      "name": "novo produto",
+      "price": "1000",
+      "id": 9
+    },
+    {
+      "name": "novo produto",
+      "price": "1000",
+      "id": 10
+    },
+    {
+      "name": "cocota",
+      "price": "100",
+      "id": 11
+    },
+    {
+      "name": "cadeira",
+      "price": "700",
+      "id": 12
+    }
+  ]
+}
