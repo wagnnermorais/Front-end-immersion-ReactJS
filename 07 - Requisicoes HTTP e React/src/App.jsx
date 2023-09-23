@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useFetch } from "./hooks/useFetch";
 import "./App.css";
 
@@ -6,10 +6,10 @@ const url = "http://localhost:3000/products";
 
 function App() {
   // Resgatando dados
-  const [products, setProducts] = useState([]);
+  // const [products, setProducts] = useState([]);
 
   // Custom Hook
-  const { data: items, httpConfig } = useFetch(url);
+  const { data: items, httpConfig, loading, error } = useFetch(url);
 
   // Método substituido para realizar o GET com custom hook
   // useEffect(() => {
@@ -58,6 +58,12 @@ function App() {
     <>
       <h1>HTTP em React</h1>
 
+      {/* Loading State */}
+      {loading && <p>Carregando...</p>}
+
+      {/* Tratando error */}
+      {error && <p>{error}</p>}
+
       {/* Resgatando dados */}
       <ul>
         {items &&
@@ -86,7 +92,10 @@ function App() {
               onChange={(e) => setPrice(e.target.value)}
             />
           </label>
-          <input type="submit" value="Enviar" />
+          {/* <input type="submit" value="Enviar" /> */}
+          {/* Loading State POST REQUEST */}
+          {loading && <input type="submit" value="Aguarde" disabled />}
+          {!loading && <input type="submit" value="Enviar" />}
         </form>
       </div>
     </>
