@@ -47,3 +47,21 @@
 - Podemos criar o nosso próprio hook para isso, sendo chamado de custom hook.
 
 - A pasta utilizada é a hooks.
+
+## Estado de loading
+
+- Quando requisições HTTP são feitas, é normal que a resposta demore um pouco a chegar, neste intervalo, é inserido um elemento de loading.
+
+- É possível inserir no hook esta abordagem.
+
+- Pode ser bloqueado ações enquanto a requisição ocorre, isto é interessante para evitar duplicação de eventos.
+
+- Pode-se identificar um POST ocorrendo e bloquear o input de envio.
+
+## Tratamento de Erros
+
+- Podemos tratar erros das requisições com blocos try catch.
+
+- É possível pegar os dados do erro, e utilizar a mensagem para exibir algo na tela.
+
+- Desta maneira, é possível prever erros em todos os cenários do app (resgate, envio, erro).
