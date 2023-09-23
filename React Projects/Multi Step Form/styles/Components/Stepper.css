@@ -1,0 +1,20 @@
+.stepper-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepper-box {
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
+.border {
+  width: 8.725rem;
+  margin: 0 1rem;
+  border: 1px solid #948a8a;
+}
+
+/* .stepper-box img {
+  width: 30rem;
+} */
