@@ -1,14 +1,19 @@
-.satisfaction-test {
+.satisfaction-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 0;
+  margin: 0.575rem 0 0;
   text-align: center;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.satisfaction-box {
+  display: flex;
+  gap: 1.25rem;
 }
 
 .satisfaction-box svg {
-  width: 100%;
+  width: 2.925rem;
   font-size: 2rem;
   cursor: pointer;
   transition: 0.35s;
@@ -45,11 +50,62 @@
 }
 
 .text-area-box {
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
 }
 
-form textarea {
+textarea {
   margin: 1rem 0;
   padding: 0.5rem;
   width: 100%;
+  font-size: 1.025rem;
+  outline: none;
+}
+
+textarea:hover {
+  background: #f3f0f0;
+}
+
+@media screen and (max-width: 650px) {
+  .satisfaction-container {
+    display: block;
+    padding: 0 1.375rem;
+  }
+
+  .satisfaction-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.75rem 0 0;
+    gap: 0;
+  }
+
+  .satisfaction-box svg {
+    width: 100%;
+    font-size: 2.525rem;
+  }
+
+  .satisfaction-box svg:hover {
+    fill: #324f6d;
+  }
+
+  .satisfaction-box input:checked ~ svg {
+    fill: #1e90ff;
+  }
+
+  .radio-box span {
+    font-size: 0.925rem;
+    padding: 0 1rem;
+  }
+
+  .text-area-box {
+    margin: 0;
+  }
+
+  textarea {
+    margin: 0 0 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 0.9rem;
+    outline: none;
+  }
 }
