@@ -1,5 +1,5 @@
 .form-container {
-  margin: 1.45rem 0 0;
+  margin: 1.6rem 0 0;
 }
 
 .label {
@@ -26,4 +26,20 @@
 
 .input::placeholder {
   font-style: italic;
+}
+
+@media screen and (max-width: 650px) {
+  .form-container {
+    margin: 1.575rem 0 0;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .input {
+    margin: 0.5rem 0 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 }

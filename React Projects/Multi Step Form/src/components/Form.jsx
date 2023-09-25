@@ -4,11 +4,11 @@ const Form = ({ data, updateFieldHandler }) => {
   return (
     <div className="form-container">
       <label>
-        <span className="label">Nome:</span>
+        <span className="label">First Name:</span>
         <input
           className="input"
           type="text"
-          placeholder="Digite seu nome"
+          placeholder="John"
           name="name"
           onChange={(e) => updateFieldHandler("name", e.target.value)}
           value={data.name || ""}
@@ -19,7 +19,7 @@ const Form = ({ data, updateFieldHandler }) => {
         <input
           className="input"
           type="text"
-          placeholder="Digite seu e-mail"
+          placeholder="johndoe@email.com"
           name="email"
           onChange={(e) => updateFieldHandler("email", e.target.value)}
           value={data.email || ""}
