@@ -1,13 +1,55 @@
-.satisfaction-box {
+.satisfaction-test {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0;
+  text-align: center;
+  gap: 1rem;
+}
+
+.satisfaction-box svg {
   width: 100%;
-  margin: 0 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.35s;
+  fill: #827f7d;
+}
+
+.satisfaction-box svg:hover {
+  fill: #324f6d;
+}
+
+.satisfaction-box input:checked ~ svg {
+  fill: #1e90ff;
+}
+
+.radio-box {
+  text-align: center;
+  font-size: 0.925rem;
+  font-style: italic;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.625);
+  position: relative;
+}
+
+.radio-box input {
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  left: 47px;
+}
+
+.comment {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.725);
 }
 
 .text-area-box {
-  margin: 4rem 0 0;
+  margin: 2rem 0 0;
 }
 
 form textarea {
+  margin: 1rem 0;
   padding: 0.5rem;
   width: 100%;
 }
