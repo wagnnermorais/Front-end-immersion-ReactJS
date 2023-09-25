@@ -1,5 +1,5 @@
 import "../../styles/Components/Satisfaction.css";
-import Input from "./Input";
+import Input from "./UI/Input";
 import {
   BsEmojiNeutral,
   BsEmojiFrown,
@@ -9,7 +9,7 @@ import {
 
 const Satisfaction = () => {
   return (
-    <div>
+    <div className="satisfaction-container">
       <form>
         <div className="satisfaction-box">
           <label>
@@ -39,6 +39,17 @@ const Satisfaction = () => {
             <span>Muito satisfeito</span>
           </label>
         </div>
+        <div className="text-area-box">
+          <label>
+            <span>Comentário:</span>
+          </label>
+        </div>
+        <textarea
+          name="txtArea"
+          id="txtArea"
+          placeholder="Conte como foi sua experiência com o produto"
+          rows="5"
+        ></textarea>
       </form>
     </div>
   );
