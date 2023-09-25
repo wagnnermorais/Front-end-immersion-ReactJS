@@ -10,7 +10,6 @@ import useComponents from "../hooks/useComponents";
 import { useState } from "react";
 
 // Data Component
-
 const dataTemplate = {
   name: "",
   email: "",
@@ -25,27 +24,33 @@ const Home = () => {
       return { ...prev, [key]: value };
     });
   };
+
   const formComponents = [
     <Form data={data} updateFieldHandler={updateFieldHandler} />,
     <Satisfaction data={data} updateFieldHandler={updateFieldHandler} />,
     <Send data={data} />,
   ];
+
   const { currentStep, currentComponent, changeStep, isFirstStep, isLastStep } =
     useComponents(formComponents);
 
   function sendForm() {
     return alert("Thank, u! <3");
   }
+
   return (
-    <div>
-      <h1>Deixe sua avaliação</h1>
-      <p>
-        Ficamos felizes com sua compra, utilize o formulário abaixo para avaliar
-        o produto
+    <div className="home-section">
+      <h1 className="home-main-title">Give us a feedback!</h1>
+      <p className="home-subtitle">
+        We are happy with your purchase! Use the form below to give us some
+        feedback about the product.
       </p>
       <div className="container">
         <Stepper currentStep={currentStep} />
-        <form onSubmit={(event) => changeStep(currentStep, event)}>
+        <form
+          className="main-form"
+          onSubmit={(event) => changeStep(currentStep, event)}
+        >
           <div className="ui-box">{currentComponent}</div>
           <div className="button-box">
             {!isFirstStep && (
