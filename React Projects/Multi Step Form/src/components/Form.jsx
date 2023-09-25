@@ -1,22 +1,30 @@
-import Input from "./UI/Input";
+import "../../styles/Components/Form.css";
 
-const Form = () => {
+const Form = ({ data, updateFieldHandler }) => {
   return (
-    <div>
-      <Input
-        title={"Nome:"}
-        type={"text"}
-        name={"name"}
-        placeholder={"Digite o seu nome"}
-        state={"state"}
-      />
-      <Input
-        title={"Email:"}
-        type={"email"}
-        name={"email"}
-        placeholder={"Digite o seu e-mail"}
-        state={"state"}
-      />
+    <div className="form-container">
+      <label>
+        <span className="label">Nome:</span>
+        <input
+          className="input"
+          type="text"
+          placeholder="Digite seu nome"
+          name="name"
+          onChange={(e) => updateFieldHandler("name", e.target.value)}
+          value={data.name || ""}
+        />
+      </label>
+      <label>
+        <span className="label">E-mail:</span>
+        <input
+          className="input"
+          type="text"
+          placeholder="Digite seu e-mail"
+          name="email"
+          onChange={(e) => updateFieldHandler("email", e.target.value)}
+          value={data.email || ""}
+        />
+      </label>
     </div>
   );
 };

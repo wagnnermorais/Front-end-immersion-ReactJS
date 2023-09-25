@@ -7,17 +7,31 @@ import Send from "../components/Send";
 
 // Hooks
 import useComponents from "../hooks/useComponents";
+import { useState } from "react";
+
+// Data Component
+
+const dataTemplate = {
+  name: "",
+  email: "",
+  review: "",
+  comment: "",
+};
 
 const Home = () => {
-  const formComponents = [<Form />, <Satisfaction />, <Send />];
-  // prettier-ignore
-  const { 
-    currentStep, 
-    currentComponent, 
-    changeStep, 
-    isFirstStep, 
-    isLastStep 
-  } = useComponents(formComponents);
+  const [data, setData] = useState(dataTemplate);
+  const updateFieldHandler = (key, value) => {
+    setData((prev) => {
+      return { ...prev, [key]: value };
+    });
+  };
+  const formComponents = [
+    <Form data={data} updateFieldHandler={updateFieldHandler} />,
+    <Satisfaction data={data} updateFieldHandler={updateFieldHandler} />,
+    <Send data={data} />,
+  ];
+  const { currentStep, currentComponent, changeStep, isFirstStep, isLastStep } =
+    useComponents(formComponents);
 
   function sendForm() {
     return alert("Thank, u! <3");
