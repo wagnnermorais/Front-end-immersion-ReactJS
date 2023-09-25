@@ -15,29 +15,29 @@ const Send = ({ data }) => {
   };
   return (
     <div className="send-container">
-      <h2 className="send-title">Falta pouco...</h2>
+      <h2 className="send-title">Almost there...</h2>
       <div className="send-info">
         <p className="info">
-          A sua opinião é muito importante, em breve você receberá um cupom de
-          10% de desconto para a sua próxima compra.
+          Your feedback is essencial to us. To make up for your time, you'll
+          receive a 10% discount coupon for your next purchase.
         </p>
         <p className="info">
-          Para concluir sua avalição, clique no botão de <strong>enviar</strong>
-          abaixo.
+          To complete your review, click in the <strong>Send</strong> button
+          below.
         </p>
       </div>
       <h3 className="send-subtitle">
-        Aqui está o resumo de sua avaliação, {data.name}:
+        Here's your feedback. Check it out, {data.name}!
       </h3>
       <div className="review">
         <div className="review-box">
-          <p className="product-review">Satisfação com o produto:</p>
+          <p className="product-review">Product Satisfaction:</p>
           <span>{emojiData[data.review]}</span>
         </div>
         <div className="review-box">
-          <p className="product-review">Comentário:</p>
-          <span>{data.comment}</span>
+          <p className="product-review">Comment:</p>
         </div>
+        <span>{data.comment}</span>
       </div>
     </div>
   );

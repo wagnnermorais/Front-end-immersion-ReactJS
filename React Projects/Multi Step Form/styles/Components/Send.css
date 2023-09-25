@@ -1,6 +1,6 @@
 .send-container {
   text-align: center;
-  margin: 0 0 2rem;
+  margin: 0 0 1.125rem;
 }
 
 .send-title {
@@ -11,7 +11,7 @@
 .send-info {
   margin: 1rem 0rem 1.5rem;
   font-weight: 500;
-  color: hsl(0, 8%, 26%);
+  color: #483d3d;
 }
 
 .info {
@@ -19,7 +19,7 @@
 }
 
 .send-subtitle {
-  font-size: 1.475rem;
+  font-size: 1.425rem;
   margin: 0 0 1rem;
 }
 
@@ -32,4 +32,35 @@
 
 .product-review {
   font-weight: 700;
+}
+
+@media screen and (max-width: 650px) {
+  .send-title {
+    font-size: 1.425rem;
+    margin: 1.725rem 0 0;
+  }
+
+  .send-info {
+    margin: 0.5rem 0 1rem;
+    font-weight: 500;
+  }
+
+  .info {
+    font-size: 0.885rem;
+    line-height: 1.375;
+    margin: 0 0 0.725rem;
+  }
+
+  .send-subtitle {
+    font-size: 1.225rem;
+    margin: 0 0 1rem;
+  }
+
+  .review-box {
+    display: block;
+  }
+
+  .review-box span {
+    font-size: 0.885rem;
+  }
 }
