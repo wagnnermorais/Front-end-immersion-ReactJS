@@ -1,0 +1,35 @@
+.send-container {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+.send-title {
+  font-size: 2.125rem;
+  margin: 0 0 1rem;
+}
+
+.send-info {
+  margin: 1rem 0rem 1.5rem;
+  font-weight: 500;
+  color: hsl(0, 8%, 26%);
+}
+
+.info {
+  margin: 0 0 0.5rem;
+}
+
+.send-subtitle {
+  font-size: 1.475rem;
+  margin: 0 0 1rem;
+}
+
+.review-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 0.25rem;
+}
+
+.product-review {
+  font-weight: 700;
+}
