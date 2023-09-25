@@ -6,15 +6,15 @@ const Stepper = ({ currentStep }) => {
     <div className="stepper-container">
       <div className="stepper-box active">
         <AiOutlineUser />
-        <p>Identificação</p>
+        <p>Identification</p>
       </div>
       <div className={`stepper-box ${currentStep >= 1 ? "active" : ""}`}>
         <AiOutlineStar />
-        <p>Avaliação</p>
+        <p>Review</p>
       </div>
       <div className={`stepper-box ${currentStep >= 2 ? "active" : ""}`}>
         <AiOutlineSend />
-        <p>Envio</p>
+        <p>Submit</p>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  z-index: 10;
   gap: 4.325rem;
 }
 
@@ -37,4 +36,22 @@
 .stepper-box,
 .active {
   transition: 0.45s;
+}
+
+@media screen and (max-width: 650px) {
+  .stepper-container {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .stepper-container::after {
+    position: relative;
+  }
+
+  .stepper-box {
+    justify-content: center;
+    margin: 1rem auto 0;
+    padding: 0;
+  }
 }
