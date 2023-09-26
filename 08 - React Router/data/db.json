@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "name": "Maçã",
+      "price": "23.99",
+      "id": 1
+    },
+    {
+      "name": "Banana",
+      "price": "18.99",
+      "id": 2
+    },
+    {
+      "name": "Uva",
+      "price": "27.99",
+      "id": 3
+    },
+    {
+      "name": "Abacaxi",
+      "price": "14.99",
+      "id": 4
+    },
+    {
+      "name": "Morango",
+      "price": "34.99",
+      "id": 5
+    },
+    {
+      "name": "Ameixa",
+      "price": "15.99",
+      "id": 6
+    },
+    {
+      "name": "Melão",
+      "price": "25.99",
+      "id": 7
+    },
+    {
+      "name": "Laranja",
+      "price": "20.99",
+      "id": 8
+    },
+    {
+      "name": "Pessego",
+      "price": "14.99",
+      "id": 9
+    }
+  ]
+}
