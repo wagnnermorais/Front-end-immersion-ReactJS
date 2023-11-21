@@ -53,3 +53,25 @@
 - As rotas aninhadas, ou nested routes, são estruturas mais complexas onde combinamos rotas dinâmicas e criamos uma estrutura maior para acessar a página.
 
 - Ex> "/products/:id/info"
+
+## Link Ativo
+
+- Para identificar links ativos utilizamos o componente NavLink ao invés de Link.
+
+- Há uma propriedade isActive que pode aplicar estilos diferenciados para este link.
+
+## Search Params
+
+- O recurso de Search Params permite pegar informações da URL.
+
+- Muito interessante para fazer funcionalidades de busca em um site.
+
+- O hook utilizado para resgatar estes dados é o: useSearchParams.
+
+## Redirect
+
+- Podemos criar um redirecionamento de páginas com o componente Navigate.
+
+- Exemplo: uma URL que deixa de existir, mas queremos redirecionar o usuário para outra.
+
+- A configuração é feita no próprio main.jsx.
