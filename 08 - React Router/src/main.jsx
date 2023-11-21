@@ -19,6 +19,12 @@ import Product from "./routes/Product.jsx";
 // Nested Route
 import Info from "./routes/Info.jsx";
 
+// Search Params
+import Search from "./routes/Search.jsx";
+
+// Navigate
+import { Navigate } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "", // Onde são configuradas o "nome" das rotas
@@ -43,6 +49,16 @@ const router = createBrowserRouter([
       {
         path: "products/:id/info",
         element: <Info />,
+      },
+      // Search Params
+      {
+        path: "search",
+        element: <Search />,
+      },
+      // Redirect
+      {
+        path: "teste",
+        element: <Navigate to="/" />,
       },
     ],
   },
