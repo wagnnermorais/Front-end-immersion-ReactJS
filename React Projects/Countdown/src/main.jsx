@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import Home from "./routes/Home.jsx";
 import Countdown from "./routes/Countdown.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { CountDownProvider } from "./context/CountDownContenxt.jsx";
 import "./styles/index.css";
 
 const router = createBrowserRouter([
@@ -25,6 +26,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <CountDownProvider>
+      <RouterProvider router={router} />
+    </CountDownProvider>
   </React.StrictMode>
 );
