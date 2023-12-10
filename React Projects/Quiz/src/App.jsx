@@ -7,6 +7,7 @@ import PickCategory from "./components/PickCategory";
 import "./styles/App.css";
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const [quizState, dispatch] = useContext(QuizContext);
 
   return (
