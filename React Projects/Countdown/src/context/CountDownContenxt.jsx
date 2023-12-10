@@ -11,4 +11,4 @@ const CountDownProvider = ({ children }) => {
   );
 };
 
-export { CountDownContext };
+export { CountDownContext, CountDownProvider };
