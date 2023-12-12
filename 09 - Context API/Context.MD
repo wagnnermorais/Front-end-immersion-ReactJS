@@ -35,3 +35,9 @@
 - Pode ser criado um hook e trabalhar o contexto nele.
 
 - Concentra-se o useContext em um só local, que será no hook e, há um intervalo para uma possível validação na alteração do contexto.
+
+## Context e useReducer
+
+- Contextos mais complexos podem necessitar de variações no comportamento, por isso, é mais indicado utilizar o hook useReducer.
+
+- Ele funciona como um useState, mas com mais possibilidades.
