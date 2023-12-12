@@ -17,3 +17,11 @@
 ### Utilização
 
 - Importar o contexto no componente a ser usado.
+
+## Criando o provider
+
+- O provider vai delimitar o escopo do contexto, ou seja, em que componente teremos acesso aos dados.
+
+- O provider deve encapsular os componentes que precisam do context.
+
+- Tem a prop <em>"children"</em>, para inserirmos elementos dentro.
