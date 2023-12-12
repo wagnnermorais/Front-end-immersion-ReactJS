@@ -13,6 +13,9 @@ import "./index.css";
 // criando provider
 import { CounterContextProvider } from "./context/CounterContext.jsx";
 
+// contexto com useReducer
+import { TitleColorContextProvider } from "./context/TitleColorContext.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -32,8 +35,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <CounterContextProvider>
-      <RouterProvider router={router} />
-    </CounterContextProvider>
+    <TitleColorContextProvider>
+      <TitleColorContextProvider>
+        <RouterProvider router={router} />
+      </TitleColorContextProvider>
+    </TitleColorContextProvider>
   </React.StrictMode>
 );
