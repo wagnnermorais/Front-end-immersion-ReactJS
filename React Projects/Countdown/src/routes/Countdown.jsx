@@ -18,12 +18,12 @@ const Countdown = () => {
 
   return (
     <>
-      <Title title={eventTitle} />
+      <Title title={eventTitle} eventColor={eventColor} />
       <div className={styles.countDownContainer}>
-        <Counter title={"Dias"} number={days} />
-        <Counter title={"Horas"} number={hours} />
-        <Counter title={"Minutos"} number={minutes} />
-        <Counter title={"Segundos"} number={seconds} />
+        <Counter title={"Dias"} number={days} eventColor={eventColor} />
+        <Counter title={"Horas"} number={hours} eventColor={eventColor} />
+        <Counter title={"Minutos"} number={minutes} eventColor={eventColor} />
+        <Counter title={"Segundos"} number={seconds} eventColor={eventColor} />
       </div>
     </>
   );
