@@ -29,3 +29,9 @@
 ## Alterando o contexto
 
 - Para exibir e alterar o valor do contexto, é utilizado o hook useContext.
+
+## Contexto com Hook
+
+- Pode ser criado um hook e trabalhar o contexto nele.
+
+- Concentra-se o useContext em um só local, que será no hook e, há um intervalo para uma possível validação na alteração do contexto.
