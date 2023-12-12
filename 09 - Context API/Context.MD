@@ -25,3 +25,7 @@
 - O provider deve encapsular os componentes que precisam do context.
 
 - Tem a prop <em>"children"</em>, para inserirmos elementos dentro.
+
+## Alterando o contexto
+
+- Para exibir e alterar o valor do contexto, é utilizado o hook useContext.
