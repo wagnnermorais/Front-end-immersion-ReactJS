@@ -17,3 +17,27 @@
 - Tendo um valor para gerenciar e uma função para alteração do valor.
 
 - O reducer, geralmente contém operações mais complexas em relação ao useState, utilizando um switch/case.
+
+## useEffect
+
+- O useEffect é utilizado em diversas situações, tais como alterações nos elementos ou requisições HTTP.
+
+- A grande vantagem é que estas ações podem ser controladas.
+
+- O array de dependências possui os itens a serem monitorados.
+
+### useEffect com array vazio
+
+- Às vezes é necessário executar uma ação uma única vez, podendo ser feito com o array de dependências vazio. Na primeira renderização do componente, o código é executado.
+
+### useEffect com array com valores
+
+- Pode ser condicionada a execução do useEffect colocando valores no array de dependências.
+
+- Sempre que este dado for modificado, o useEffect executa mais uma vez, permitindo a reutilização e de forma controlada.
+
+### Limpeza do useEffect
+
+- Algumas ações precisam ser limpas com uma técnica chamada <em>cleanup</em>
+
+- Por exemplo, uma ação é executada de tempos em tempos, pode ser executada após uma mudança de página, para resolver isso, basta finalizar a ação no useEffect com um return.
