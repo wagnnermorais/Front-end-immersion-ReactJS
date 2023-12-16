@@ -41,3 +41,19 @@
 - Algumas ações precisam ser limpas com uma técnica chamada <em>cleanup</em>
 
 - Por exemplo, uma ação é executada de tempos em tempos, pode ser executada após uma mudança de página, para resolver isso, basta finalizar a ação no useEffect com um return.
+
+## useContext
+
+- O useContext é o hook utilizado para consumir um context, da <strong>Context API</strong>.
+
+- É preciso criar o contexto e o prevedor, envolver os componentes que vão receber os dados e fazer o uso do hook onde necessário.
+
+## useRef
+
+- O useRef pode ser utilizado como o useState gerenciando valores, a diferença é que ele é um objeto, e seu valor está na propriedade current.
+
+- Este hook não re-renderiza o componente ao ser utilizado, o que pode ser interessante em alguns casos.
+
+### useRef e o DOM
+
+- O useRef pode ser utilizado para selecionar elementos no JSX, com isso, pode ser feito manipulações no DOM, ou aplicar eventos como o focus.
