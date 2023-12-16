@@ -6,8 +6,13 @@ import HookUseEffect from "../components/useEffect/HookUseEffect";
 import HookUseEffectEmptyArray from "../components/useEffect/HookUseEffectEmptyArray";
 import HookUseEffectValuedArray from "../components/useEffect/HookUseEffectValuedArray";
 import HookUseEffectCleanUp from "../components/useEffect/HookUseEffectCleanUp";
+import { useContext } from "react";
+import { SomeContext } from "../components/useContext/HookUseContext";
+import HookUseRef from "../components/useRef/HookUseRef";
+import HookUseRefDOM from "../components/useRef/HookUseRefDOM";
 
 const Home = () => {
+  const { contextValue } = useContext(SomeContext);
   return (
     <div>
       <h1>Home</h1>
@@ -18,7 +23,11 @@ const Home = () => {
       <HookUseEffect />
       <HookUseEffectEmptyArray />
       <HookUseEffectValuedArray />
-      <HookUseEffectCleanUp />
+      {/* <HookUseEffectCleanUp /> */}
+      <h2>useContext:</h2>
+      <p>Valor do contexto: {contextValue}</p>
+      <HookUseRef />
+      <HookUseRefDOM />
     </div>
   );
 };
