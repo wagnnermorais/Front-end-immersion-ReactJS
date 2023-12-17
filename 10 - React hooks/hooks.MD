@@ -79,3 +79,11 @@
 - Muito parecido com o useEffect, a diferença é que este hook roda antes da renderização do componente, ou seja, o hook é síncrono, bloqueando o carregamento da página para o sucesso da funcionalidade.
 
 - A ideia é executar algo antes de qualquer elemento aparecer na página.
+
+## useImperativeHandle
+
+- Com o useImperativeHandle é possível acionar ações em outro componente, de forma imperativa.
+
+- Como não é possível passar refs como proprs, precisa-se utilizar a função forwardRef.
+
+- Isso permite passar referências.
