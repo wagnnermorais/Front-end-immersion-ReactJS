@@ -87,3 +87,7 @@
 - Como não é possível passar refs como proprs, precisa-se utilizar a função forwardRef.
 
 - Isso permite passar referências.
+
+## Custom Hooks
+
+- Os custom hooks são os hooks que nós criamos, estratégia utilizada para abstrair funções complexas do componente ou reaproveitar o código.
