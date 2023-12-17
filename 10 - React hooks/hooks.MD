@@ -65,3 +65,11 @@
 - O primeiro caso é quando é prezado pela performance, então uma função muito complexa pode ser criada uma vez só.
 
 - O segundo caso é quando o React alerta que uma função deveria estar no useCallback.
+
+## useMemo
+
+- O useMemo pode ser utilizado para garantir a referência de um objeto.
+
+- Fazendo com que algo possa ser atrelado a uma referência e não um valor.
+
+- Com isso, é possível condicionar useEffects a uma variável de maneira mais inteligente.
