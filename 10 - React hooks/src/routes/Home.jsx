@@ -21,7 +21,7 @@ const Home = () => {
   return (
     <div>
       <h1>Home</h1>
-      {/* <HookUseState />
+      <HookUseState />
       <HookUseStateInputs />
       <HookUseReducer />
       <HookUseReducerSwitch />
@@ -34,9 +34,9 @@ const Home = () => {
       <HookUseRef />
       <HookUseRefDOM />
       <HookUseCallback />
-      <HookUseMemo /> */}
-      {/* <HookUseLayoutEffect /> */}
-      {/* <HookUseImpHandle /> */}
+      <HookUseMemo />
+      <HookUseLayoutEffect />
+      <HookUseImpHandle />
       <CustomHook />
     </div>
   );
