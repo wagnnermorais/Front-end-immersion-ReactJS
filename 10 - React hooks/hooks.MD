@@ -57,3 +57,11 @@
 ### useRef e o DOM
 
 - O useRef pode ser utilizado para selecionar elementos no JSX, com isso, pode ser feito manipulações no DOM, ou aplicar eventos como o focus.
+
+## useCallback
+
+- O useCallback pode ser utilizado em duas situações, uma vez que ele memoriza uma função, fazendo com que ela não seja reconstruída a cada renderização.
+
+- O primeiro caso é quando é prezado pela performance, então uma função muito complexa pode ser criada uma vez só.
+
+- O segundo caso é quando o React alerta que uma função deveria estar no useCallback.
