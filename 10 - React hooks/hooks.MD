@@ -73,3 +73,9 @@
 - Fazendo com que algo possa ser atrelado a uma referência e não um valor.
 
 - Com isso, é possível condicionar useEffects a uma variável de maneira mais inteligente.
+
+## useLayoutEffect
+
+- Muito parecido com o useEffect, a diferença é que este hook roda antes da renderização do componente, ou seja, o hook é síncrono, bloqueando o carregamento da página para o sucesso da funcionalidade.
+
+- A ideia é executar algo antes de qualquer elemento aparecer na página.
