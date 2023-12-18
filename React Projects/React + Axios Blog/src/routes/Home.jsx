@@ -30,7 +30,7 @@ const Home = () => {
           <div className="post" key={post.id}>
             <h4>{post.title}</h4>
             {post.body}
-            <Link to={`/posts/${posts.id}`} className="button">
+            <Link to={`/posts/${post.id}`} className="button">
               Ler mais
             </Link>
           </div>
