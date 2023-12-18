@@ -34,7 +34,7 @@ const Admin = () => {
           <div className="post" key={post.id}>
             <h3>{post.title}</h3>
             <div className="actions">
-              <Link>
+              <Link to={`/posts/edit/${post.id}`}>
                 <button className="button edit-btn">Editar</button>
               </Link>
               <Link>
