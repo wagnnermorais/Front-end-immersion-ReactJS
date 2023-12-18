@@ -1,0 +1,44 @@
+.post-main-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  margin-bottom: 0.5rem;
+}
+
+.form-control input,
+.form-control textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.button {
+  margin: 1rem 0 1.5rem;
+  padding: 0.5rem 1rem;
+  width: 125px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: #fff;
+  color: #0e1217;
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.button:hover {
+  color: #fff;
+  background: #0e1217;
+}

@@ -1,0 +1,39 @@
+.main-title {
+  margin: 2rem 0 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  border-bottom: 1px solid #777;
+}
+
+.post h4::first-letter {
+  text-transform: uppercase;
+}
+
+.post h4,
+.post p {
+  margin: 0 0 1rem;
+}
+
+.button {
+  margin: 1rem 0 1.5rem;
+  padding: 0.5rem 1rem;
+  width: 125px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: #fff;
+  color: #0e1217;
+  opacity: 1;
+  transition: 0.25s;
+}
+
+.button:hover {
+  color: #fff;
+  background: #0e1217;
+}
