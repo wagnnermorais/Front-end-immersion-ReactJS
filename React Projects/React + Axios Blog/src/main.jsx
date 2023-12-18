@@ -5,6 +5,7 @@ import Home from "./routes/Home.jsx";
 import Create from "./routes/Create.jsx";
 import Post from "./routes/Post.jsx";
 import Admin from "./routes/Admin.jsx";
+import Edit from "./routes/Edit.jsx";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import "./styles/index.css";
 
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "/admin",
         element: <Admin />,
+      },
+      {
+        path: "/posts/edit/:id",
+        element: <Edit />,
       },
     ],
   },
