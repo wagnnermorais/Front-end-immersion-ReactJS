@@ -11,6 +11,9 @@ const Navbar = () => {
         <Link to={"/"}>
           <li>Home</li>
         </Link>
+        <Link to={"/admin"}>
+          <li>Gerenciar</li>
+        </Link>
         <Link to={"/create"}>
           <li className="create-button">Criar</li>
         </Link>

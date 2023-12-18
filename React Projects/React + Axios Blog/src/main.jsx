@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import Home from "./routes/Home.jsx";
 import Create from "./routes/Create.jsx";
 import Post from "./routes/Post.jsx";
+import Admin from "./routes/Admin.jsx";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import "./styles/index.css";
 
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
       {
         path: "/posts/:id",
         element: <Post />,
+      },
+      {
+        path: "/admin",
+        element: <Admin />,
       },
     ],
   },
